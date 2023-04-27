@@ -59,7 +59,9 @@ function Cotizar({
     error, 
     setError, 
     resultado,
-    spinner}) {
+    spinner,
+    mensaje,
+    setMensaje}) {
   return (
     <>
       <ContainerG>
@@ -74,7 +76,9 @@ function Cotizar({
               <Form
                 setMonedas={setMonedas}
                 error={error}
-                setError={setError}/>
+                setError={setError}
+                mensaje={mensaje}
+                setMensaje={setMensaje}/>
 
             </Columna>
           </Contenedor>

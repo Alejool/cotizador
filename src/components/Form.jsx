@@ -30,13 +30,12 @@ const Button=styled.input `
   }
 `
 
-export default function Form({setMonedas, error, setError}) {
+export default function Form({setMonedas, error, setError, mensaje, setMensaje}) {
 
 
     // states
     const [cripto, setCripto]=useState([])
-   
-    const [mensaje, setMensaje]=useState('false')
+    
     const [datosMonedas, setDatosMonedas]=useState([])
     
 
@@ -108,12 +107,15 @@ export default function Form({setMonedas, error, setError}) {
   // funciones
 
   const handleSubmit=e=>{
+
     e.preventDefault();
     if([moneda, criptos].includes('')){
       setError(true)
       setMensaje('todos los campos son obligatorios')
+      
       return;
     }
+
     setError(false)
 
     const obj={
