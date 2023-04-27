@@ -1,0 +1,70 @@
+
+
+
+:root {
+  --gris:#9BA4B5;
+  --blanco:#F1F6F9;
+  --azul-claro:#394867;
+  --azul-oscuro:#212A3E;
+  --negro:#000;
+  --rojo:#EB455F;
+  --morado:#58287F;
+  --morado-oscuro:#471b69;
+}
+html{
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+body {
+ 
+  margin: 0;
+  font-family: 'Pathway Extreme', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-image: linear-gradient(to bottom, #000000b7 1%,  #000000cc  100%),url('/img/fondo.jpg');
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#root {
+  padding: 7rem  0  3rem 0;
+  
+}
+
+
+img {
+  display: block;
+  max-width: 400px;
+  width: 90%;
+  margin:  0 auto;
+}
+
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath fill='%23000' d='M8 12L3 6h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 15px 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.alerta {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: .5rem;
+  margin-top: 2rem;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 2rem;
+}
+
+.error {
+  background-color: var(--rojo);
+}
