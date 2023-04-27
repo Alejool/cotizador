@@ -11,7 +11,7 @@ const Cotizado=styled.div `
 
   @media (min-width: 768px){
     text-align:right ;
-    margin-top: -5rem;
+    margin-top: -4rem;
 
      
   }
