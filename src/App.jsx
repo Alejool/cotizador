@@ -11,9 +11,10 @@ function App() {
   const [error, setError]=useState(false)
   const [monedas, setMonedas]=useState({})
   const [resultado, setResultado]=useState({})
+  const [spinner, setSpinner]=useState(false)
 
   useEffect(()=>{
-  setError(false)
+    setError(false)
     if(Object.keys(monedas).length>0){
 
       const {moneda, criptos}=monedas;
@@ -22,10 +23,14 @@ function App() {
    
 
       const cotizarCripto=async()=>{
+        setSpinner(true)
+
         const respuesta=await fetch(url)
         const resultado=await respuesta.json();
 
        setResultado(resultado.DISPLAY[criptos][moneda])
+
+       setSpinner(false)
       
           
       }
@@ -43,6 +48,7 @@ function App() {
         error={error}
         setError={setError}
         resultado={resultado}
+        spinner={spinner}
         />
 
 

@@ -22,7 +22,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center ;
-  background-image: linear-gradient(to bottom, #000000b7 1%,  #000000cc  100%),url('/img/fondo.jpg');
+  background-image: linear-gradient(to bottom, #000000b7 1%,  #000000cc  100%),url('/img/fondo.avif');
   height: 100%;
 }
 *, *:before, *:after {
@@ -68,3 +68,6 @@ select {
 .error {
   background-color: var(--rojo);
 }
+
+
+

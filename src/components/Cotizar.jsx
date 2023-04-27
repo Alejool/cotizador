@@ -4,9 +4,10 @@ import styled from '@emotion/styled'
 // components
 import Form from './Form'
 import Resultado from './Resultado'
+import Spinner from './Spinner'
 
 // img
-import cripto from '/img/4.1.png'
+import cripto from '/img/4.avif'
 
 const ContainerG=styled.div `
 max-width:60rem;
@@ -52,7 +53,13 @@ const Imagen= styled.img `
 `
 
 
-function Cotizar({monedas, setMonedas,error, setError, resultado}) {
+function Cotizar({
+    monedas, 
+    setMonedas,
+    error, 
+    setError, 
+    resultado,
+    spinner}) {
   return (
     <>
       <ContainerG>
@@ -72,7 +79,9 @@ function Cotizar({monedas, setMonedas,error, setError, resultado}) {
             </Columna>
           </Contenedor>
 
-          {Object.keys(monedas).length>0 && <Resultado
+          {spinner && <Spinner/>}
+
+          {Object.keys(monedas).length>0 && !error && !spinner && <Resultado
                       monedas={monedas}
                       resultado={resultado}/>}
 

@@ -47,6 +47,7 @@ export default function Form({setMonedas, error, setError}) {
    
     
 
+  // api de paises y moneda
   useEffect(()=>{
     const url='https://restcountries.com/v3.1/lang/spanish'
 
@@ -78,6 +79,7 @@ export default function Form({setMonedas, error, setError}) {
     respuestaApi()
   },[])
 
+  // api de criptomonedas
   useEffect(()=>{
     const url="https://min-api.cryptocompare.com/data/top/totaltoptiervolfull?limit=15&tsym=USD"
 
