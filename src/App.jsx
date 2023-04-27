@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-
 import Heading from './components/Heading'
 import Cotizar from './components/Cotizar'
 

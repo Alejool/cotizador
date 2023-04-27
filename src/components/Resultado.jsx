@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import styled from '@emotion/styled'
-import imagenCripto from '/img/6.png'
 
 
 const Cotizado=styled.div `
