@@ -1,4 +1,4 @@
-#Cotizador de Criptomonedas 
+# Cotizador de Criptomonedas 
 
 Este proyecto consiste en una aplicación creada con React y Vite que permite cotizar las 15 criptomonedas más utilizadas a las monedas de los países de habla hispana. Para lograrlo, se utiliza la información proporcionada por dos APIs:
 
