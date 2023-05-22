@@ -68,17 +68,6 @@ function App() {
         setMensaje={setMensaje}
         />
 
-        
-
-   
-
-        
-
-
-
-
-
-      
     
     </>
   )
